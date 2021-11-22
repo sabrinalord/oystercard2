@@ -13,11 +13,19 @@ class OysterCard
     raise "You already have £#{@max}!" if @balance >= @max
   end
 
-  def top_up(amount)
+  def top_up(amount = 1)
     if @balance + amount > @max
       limit?
     else
       @balance += amount
+    end
+  end
+
+  def deduct(fare = 1)
+    if @balance > fare
+      @balance -= fare
+    else
+      raise "Not enough here!"
     end
   end
 end
