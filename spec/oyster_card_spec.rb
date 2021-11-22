@@ -13,7 +13,7 @@ describe OysterCard do
     expect(subject.balance).to be > current_balance
   end
 
-  it 'checks if balance is at max capacity (above £90)' do
+  it 'checks if balance is at max capacity' do
     subject.limit?
     expect { raise is_limit? }.to raise_error
   end
