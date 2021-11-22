@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'oyster_card'
 
 describe OysterCard do
