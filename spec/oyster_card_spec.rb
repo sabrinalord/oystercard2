@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'oyster_card'
 
 describe OysterCard do
@@ -13,6 +15,6 @@ describe OysterCard do
 
   it 'checks if balance is at max capacity (above £90)' do
     subject.is_limit?
-    expect { raise is_limit? }.to raise_error
+    expect { raise is_limit? }.to raise_error 'You already have £90!'
   end
 end
