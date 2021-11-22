@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Oystercard class below
 class OysterCard
   attr_reader :balance
 
@@ -5,14 +8,15 @@ class OysterCard
     @balance = 1
   end
 
+  def limit?
+    raise 'You already have £90!' if @balance >= 90
+  end
+
   def top_up(amount)
     if @balance + amount > 90
-        return is_limit?
+      is_limit?
     else
       @balance += amount
     end
-
-  def is_limit?
-    raise "You already have £90!" if @balance >= 90
   end
 end
