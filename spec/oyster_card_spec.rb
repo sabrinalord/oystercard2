@@ -14,7 +14,7 @@ describe OysterCard do
   end
 
   it 'raise error if balance exceeds max capacity' do
-    expect { subject.top_up(OysterCard::MAX_BALANCE) }.to raise_error 'You already have £90!'
+    expect { subject.top_up(OysterCard::MAX_BALANCE) }.to raise_error "You already have £#{OysterCard::MAX_BALANCE}!"
   end
 
   it 'deducts money from the Oyster Card' do
