@@ -19,7 +19,7 @@ describe OysterCard do
 
   it 'deducts money from the Oyster Card' do
     current_balance = subject.balance
-    subject.deduct(1)
+    subject.deduct(OysterCard::FARE)
     expect(subject.deduct).to be < current_balance
   end
 
@@ -43,7 +43,17 @@ describe OysterCard do
     expect(subject.balance).to be >= OysterCard::MINIMUM_FARE
   end
 
+  it 'checks if oyster card has less than the minimum fare (£1)' do
+    subject.deduct(balance)
+    expect(subject.touch_in).to raise_error 'insufficient funds'
+  end
+
   it 'checks if oyster reduces balance by correct amount' do
     expect { subject.touch_out }.to change { subject.balance }.by(OysterCard::MINIMUM_FARE)
   end
+
+  # it 'stores the entry station on the card' do
+  # subject.touch_in(:entry_station)
+  # expect(subject.entry_station) to be
+  # end
 end
