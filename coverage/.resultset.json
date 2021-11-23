@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ibrahimchowdhury-makers/Documents/oyster_card/spec/oyster_card_spec.rb": {
+      "/Users/zeekio/oyster_cards/spec/oyster_card_spec.rb": {
         "lines": [
           null,
           null,
@@ -19,7 +19,6 @@
           null,
           null,
           1,
-          1,
           2,
           null,
           null,
@@ -27,50 +26,41 @@
           1,
           1,
           1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          2,
           null,
           null
         ]
       },
-      "/Users/ibrahimchowdhury-makers/Documents/oyster_card/lib/oyster_card.rb": {
+      "/Users/zeekio/oyster_cards/lib/oyster_card.rb": {
         "lines": [
           null,
           null,
           null,
           1,
           1,
-          null,
-          1,
-          5,
-          5,
-          null,
-          null,
-          1,
           1,
           null,
+          1,
+          4,
+          4,
           null,
-          1,
-          1,
-          0,
           null,
-          1,
+          null,
           null,
           null,
           null,
           1,
+          3,
+          null,
           2,
           null,
+          null,
+          1,
           2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1637670532
+    "timestamp": 1637676210
   }
 }

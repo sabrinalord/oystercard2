@@ -2,28 +2,25 @@
 
 # Oystercard class below
 class OysterCard
+  MAX_BALANCE = 90
   attr_reader :balance, :max
 
   def initialize(max = 90)
-    @balance = 8
+    @balance = 80
     @max = max
   end
 
-  def limit?
-    raise "You already have £#{@max}!" if @balance >= @max
+  # def limit?
+  # raise "You already have £90!" if balance + amount >= @max
+  # end
+
+  def top_up(amount = 0)
+    raise 'You already have £90!' if @balance + amount > @max
+
+    @balance += amount
   end
 
-  def top_up(amount = 1)
-    if @balance + amount > @max
-      limit?
-    else
-      @balance += amount
-    end
-  end
-
-  def deduct(fare = 1)
-    raise 'Not enough money here!' unless @balance > fare
-
+  def deduct(fare = 0)
     @balance -= fare
   end
 end

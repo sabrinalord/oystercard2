@@ -9,24 +9,17 @@ describe OysterCard do
 
   it 'adds money to the Oyster Card' do
     current_balance = subject.balance
-    subject.top_up
-    expect(subject.balance).to be > current_balance
+    subject.top_up(10)
+    expect(subject.top_up).to be > current_balance
   end
 
-  it 'checks if balance is at max capacity' do
-    subject.limit?
-    expect { raise limit? }.to raise_error
+  it 'raise error if balance exceeds max capacity' do
+    expect { subject.top_up(OysterCard::MAX_BALANCE) }.to raise_error 'You already have £90!'
   end
 
   it 'deducts money from the Oyster Card' do
     current_balance = subject.balance
-    subject.deduct
-    expect(subject.balance).to be < current_balance
-  end
-
-  it 'checks if there is enough money to be deducted' do
-    subject.balance
-    subject.deduct
-    expect { raise deduct }.to raise_error
+    subject.deduct(1)
+    expect(subject.deduct).to be < current_balance
   end
 end
