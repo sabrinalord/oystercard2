@@ -3,10 +3,74 @@
     "coverage": {
       "/Users/ibrahimchowdhury-makers/Documents/oyster_card/spec/oyster_card_spec.rb": {
         "lines": [
-
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/ibrahimchowdhury-makers/Documents/oyster_card/lib/oyster_card.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          5,
+          5,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          null,
+          null
         ]
       }
     },
-    "timestamp": 1637669990
+    "timestamp": 1637670532
   }
 }
