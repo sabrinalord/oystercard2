@@ -25,7 +25,11 @@ describe OysterCard do
   end
 
   it 'checks if there is enough money to be deducted' do
+<<<<<<< HEAD
+    subject.balance
+=======
     subject.deduct
+>>>>>>> 97c8f3898fa870ce2b95cdf797ff021947536cdd
     expect { raise deduct }.to raise_error
   end
 end
