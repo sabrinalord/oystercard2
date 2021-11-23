@@ -4,9 +4,9 @@
 class OysterCard
   attr_reader :balance, :max
 
-  def initialize
+  def initialize(max = 90)
     @balance = 8
-    @max = 90
+    @max = max
   end
 
   def limit?
