@@ -22,10 +22,8 @@ class OysterCard
   end
 
   def deduct(fare = 1)
-    if @balance > fare
-      @balance -= fare
-    else
-      raise "Not enough here!"
-    end
+    raise 'Not enough money here!' unless @balance > fare
+
+    @balance -= fare
   end
 end
