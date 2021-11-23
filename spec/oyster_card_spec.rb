@@ -22,4 +22,17 @@ describe OysterCard do
     subject.deduct(1)
     expect(subject.deduct).to be < current_balance
   end
+
+  it 'checks if oyster card has touched in' do
+    subject.touch_in
+    expect(subject.touch_in).to eq true
+  end
+
+  it 'checks if oyster card is in use' do
+    expect(subject.in_journey?).to be(false)
+  end
+
+  it 'checks if oyster card has touched out' do
+    expect(subject.touch_out).to eq false
+  end
 end
