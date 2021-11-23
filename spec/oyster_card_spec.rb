@@ -35,4 +35,9 @@ describe OysterCard do
   it 'checks if oyster card has touched out' do
     expect(subject.touch_out).to eq false
   end
+
+  it 'checks if oyster card has minimum of 1 pound' do
+    subject.touch_in
+    expect(subject.balance).to be >= OysterCard::MINIMUM_FARE
+  end
 end
