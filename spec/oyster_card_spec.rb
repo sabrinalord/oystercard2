@@ -88,10 +88,6 @@ describe OysterCard do
    
   end
 
-  it 'checks if oyster card is in use' do
-    expect(subject.in_journey?).to be(false)
-  end
-
 
   # it 'stores the entry station on the card' do
   # subject.touch_in(:entry_station)

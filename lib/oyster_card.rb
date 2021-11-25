@@ -44,10 +44,6 @@ class OysterCard
     @entry_station = nil
   end
 
-  def in_journey?
-    @in_journey
-  end
-
   def add_journey(entry_station, exit_station)
     @journey_list << {entry_station: entry_station, exit_station: exit_station} 
   end
