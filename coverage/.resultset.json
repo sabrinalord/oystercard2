@@ -1,7 +1,14 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/sabrinalord/Desktop/githubLocal/OysterCards_2/spec/journey_log_spec.rb": {
+=======
+<<<<<<< HEAD
+      "/Users/zeekio/oyster_cards/spec/oyster_card_spec.rb": {
+=======
+      "/Users/sabrinalord/Desktop/githubLocal/OysterCards_2/spec/journey_spec.rb": {
+>>>>>>> b6de105e80a8673c0280447ddbe78d1261ef4e2b
         "lines": [
           null,
           null,
@@ -50,7 +57,12 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/sabrinalord/Desktop/githubLocal/OysterCards_2/spec/journey_spec.rb": {
+=======
+      "/Users/sabrinalord/Desktop/githubLocal/OysterCards_2/spec/oyster_card_spec.rb": {
+>>>>>>> 4408688cecf8b63a17193bc8ca9b53f099994503
+>>>>>>> b6de105e80a8673c0280447ddbe78d1261ef4e2b
         "lines": [
           null,
           null,
@@ -191,7 +203,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/sabrinalord/Desktop/githubLocal/OysterCards_2/spec/oyster_card_spec.rb": {
+=======
+      "/Users/zeekio/oyster_cards/lib/oyster_card.rb": {
+>>>>>>> b6de105e80a8673c0280447ddbe78d1261ef4e2b
         "lines": [
           null,
           null,
@@ -278,7 +294,7 @@
           null
         ]
       },
-      "/Users/sabrinalord/Desktop/githubLocal/OysterCards_2/spec/station_spec.rb": {
+      "/Users/zeekio/oyster_cards/spec/station_spec.rb": {
         "lines": [
           null,
           null,
@@ -296,7 +312,7 @@
           null
         ]
       },
-      "/Users/sabrinalord/Desktop/githubLocal/OysterCards_2/lib/station.rb": {
+      "/Users/zeekio/oyster_cards/lib/station.rb": {
         "lines": [
           null,
           null,
@@ -311,6 +327,14 @@
         ]
       }
     },
+<<<<<<< HEAD
     "timestamp": 1637860094
+=======
+<<<<<<< HEAD
+    "timestamp": 1637838162
+=======
+    "timestamp": 1637837886
+>>>>>>> 4408688cecf8b63a17193bc8ca9b53f099994503
+>>>>>>> b6de105e80a8673c0280447ddbe78d1261ef4e2b
   }
 }
