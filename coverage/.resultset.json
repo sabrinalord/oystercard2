@@ -166,14 +166,9 @@
       "/Users/sabrinalord/Desktop/githubLocal/OysterCards_2/spec/station_spec.rb": {
         "lines": [
           1,
-          null,
           1,
           null,
-          1,
-          2,
-          null,
-          null,
-          null,
+          3,
           null,
           1,
           1,
@@ -189,13 +184,15 @@
         "lines": [
           1,
           1,
-          0,
-          0,
+          null,
+          1,
+          2,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1637772980
+    "timestamp": 1637834912
   }
 }
