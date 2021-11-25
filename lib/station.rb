@@ -1,8 +1,10 @@
-class Station
-    attr_reader :name, :zone
+# frozen_string_literal: true
 
-    def initialize(name, zone)
-     @name = name
-     @zone = zone
-    end
+class Station
+  attr_reader :name, :zone
+
+  def initialize(name, zone)
+    @name = name
+    @zone = zone
+  end
 end
