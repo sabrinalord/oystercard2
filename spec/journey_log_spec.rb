@@ -1,16 +1,13 @@
 # frozen_string_literal: true
-
+require 'journey'
 require 'journey_log'
+
+    # It should be responsible for starting a journey, ending a journey and returning a list of journeys.
 
 describe JourneyLog do
     let(:exit_station) { double :station }
     let(:entry_station) { double :station }
     let(:journey) { { entry_station: entry_station, exit_station: exit_station } }
-
-  it 'stores the journey' do
-    subject.add_journey(entry_station, exit_station)
-    expect(subject.journey_list).to include journey
-  end
 
   describe ' #start' do
     it 'starts a journey' do

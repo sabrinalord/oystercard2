@@ -5,6 +5,6 @@ class JourneyLog
           @journey_list = []
           @journey = journey
         end
-      end
+
 end
 

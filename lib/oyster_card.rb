@@ -4,10 +4,6 @@
 class OysterCard
   MINIMUM_FARE = 1
   MAX_BALANCE = 90
-  ERROR = {
-    max: 'Maximum allowance reached',
-    min: 'insufficient funds'
-  }.freeze
   attr_reader :balance, :in_journey, :entry_station, :exit_station, :journey_list
 
   def initialize
@@ -16,7 +12,7 @@ class OysterCard
   end
 
   def top_up(amount = 0)
-    raise ERROR[:max] if @balance + amount > MAX_BALANCE
+    fail "Maximum allowance reached" if @balance + amount > MAX_BALANCE
 
     @balance += amount
   end
@@ -26,7 +22,7 @@ class OysterCard
   end
 
   def touch_in(entry_station)
-    raise 'insufficient funds' if @balance < MINIMUM_FARE
+    fail "insufficient funds" if @balance < MINIMUM_FARE
 
     @in_journey = true
     @entry_station = entry_station
