@@ -7,19 +7,8 @@ describe OysterCard do
   let(:entry_station) { double :station }
 
 
-
-
-
-
-  
-  it 'checks if there is money on the balance' do
+  it 'has a balance' do
     expect(subject.balance).to eq(0)
-  end
-
-  it 'deducts money from the Oyster Card' do
-    current_balance = subject.top_up(OysterCard::MAX_BALANCE)
-    subject.deduct(OysterCard::MINIMUM_FARE)
-    expect(subject.deduct).to be < current_balance
   end
 
   describe '#top_up' do
@@ -38,22 +27,21 @@ describe OysterCard do
       before(:each) do
         subject.top_up(OysterCard::MINIMUM_FARE)
       end
-  
-      it 'checks if oyster card has touched in' do
-        subject.touch_in(entry_station)
-        expect(subject.in_journey).to eq true
-      end
+        it 'checks if oyster card has touched in' do
+          subject.touch_in(entry_station)
+          expect(subject.in_journey).to eq true
+        end
     end
 
     context 'there are insufficient funds on the card' do
       it 'raises error when user tries to touch in' do
-        expect { subject.touch_in(entry_station) }.to raise_error "insufficient funds"
+        expect { subject.touch_in(entry_station) }.to 
+        raise_error "insufficient funds"
       end
     end
   end
 
   describe '#touch_out' do
-
     it 'expects an exit station as an argument' do
       expect(subject).to respond_to(:touch_out).with(1).argument
     end
